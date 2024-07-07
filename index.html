@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Generar PDF</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <h1>Crear Archivos PDF</h1>
+        <br />
+
+        <div id="esc">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-muted">
+                            <h6 class="mb-1 fw-semibold text-uppercase">
+                                pregunta
+                            </h6>
+                            <p class="text-success">pregunta 2</p>
+                            <p class="mb-1 fw-semibold text-uppercase fs-12">
+                                Alternativas
+                            </p>
+                            <ul class="ps-2 list-unstyled vstack gap-2">
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-2[]"
+                                            value="a"
+                                            id="check3"
+                                            checked=""
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check3"
+                                        >
+                                            a
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-2[]"
+                                            value="b"
+                                            id="check4"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check4"
+                                        >
+                                            b
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-2[]"
+                                            value="c"
+                                            id="check5"
+                                            checked=""
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check5"
+                                        >
+                                            c
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-2[]"
+                                            value="d"
+                                            id="check6"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check6"
+                                        >
+                                            d
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-muted">
+                            <h6 class="mb-1 fw-semibold text-uppercase">
+                                pregunta
+                            </h6>
+                            <p class="text-success">pregunta 3</p>
+                            <p class="mb-1 fw-semibold text-uppercase fs-12">
+                                Alternativas
+                            </p>
+                            <ul class="ps-2 list-unstyled vstack gap-2">
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="pregunta-3"
+                                            value="si"
+                                            id="radio7"
+                                            checked=""
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="radio7"
+                                        >
+                                            si
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="pregunta-3"
+                                            value="no"
+                                            id="radio8"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="radio8"
+                                        >
+                                            no
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-muted">
+                            <h6 class="mb-1 fw-semibold text-uppercase">
+                                pregunta
+                            </h6>
+                            <p class="text-success">pregunta 4</p>
+                            <p class="mb-1 fw-semibold text-uppercase fs-12">
+                                Alternativas
+                            </p>
+                            <ul class="ps-2 list-unstyled vstack gap-2">
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-4[]"
+                                            value="a"
+                                            id="check9"
+                                            checked=""
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check9"
+                                        >
+                                            a
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-4[]"
+                                            value="b"
+                                            id="check10"
+                                            checked=""
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check10"
+                                        >
+                                            b
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-success">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            name="pregunta-4[]"
+                                            value="c"
+                                            id="check11"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="check11"
+                                        >
+                                            c
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-muted">
+                            <h6 class="mb-1 fw-semibold text-uppercase">
+                                pregunta
+                            </h6>
+                            <p class="text-danger">pregunta 1</p>
+                            <p class="mb-1 fw-semibold text-uppercase fs-12">
+                                Alternativas
+                            </p>
+                            <ul class="ps-2 list-unstyled vstack gap-2">
+                                <li>
+                                    <div class="form-check form-check-danger">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="pregunta-1"
+                                            value="verdad"
+                                            id="radio1"
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="radio1"
+                                        >
+                                            verdad
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-danger">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="pregunta-1"
+                                            value="falso"
+                                            id="radio2"
+                                            checked=""
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="radio2"
+                                        >
+                                            falso
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="generarpdf">Crear PDF</a>
+ 
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                const btn = document.getElementById("generarpdf");
+                btn.addEventListener("click", function (e) {
+                    const contentElement = document.getElementById("esc");
+                    // var worker = html2pdf().from(contentElement).save();
+                    var options = {
+                        margin: 10, 
+                        filename: "resultado del examen.pdf",  
+                    }; 
+                    html2pdf()
+                        .from(contentElement)
+                        .set(options)
+                        .outputPdf()
+                        .save()
+                        .catch(function (error) {
+                            console.error("Error al generar el PDF: ", error);
+                        }); 
+                });
+            });
+        </script>
+    </body>
+</html>
