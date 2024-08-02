@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #44475a; /* Color del encabezado actualizado */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Back Button Styles */
+.btn-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #44475a;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-back i {
+    margin-right: 0.5rem;
+}
+
+.btn-back:hover {
+    background-color: #343a40;
+}
+
+/* Contact Section */
+#contacto {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #44475a; /* Color del encabezado actualizado */
+    padding-bottom: 0.5rem;
+}
+
+#contacto p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#contacto a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+#mapa {
+    margin-top: 1rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #44475a; /* Color del encabezado actualizado */
+    color: white;
+}

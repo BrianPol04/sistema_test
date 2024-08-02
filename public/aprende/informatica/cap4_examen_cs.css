@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu {
+    background-color: #353548;
+    width: 200px;
+    padding: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #575757;
+}
+
+.menu ul .submenu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #454558;
+}
+
+.menu ul .submenu li a {
+    padding: 10px 20px;
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.content {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+.pdf-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #333;
+}
+.pdf-content h1 {
+    color: #f7830f;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pdf-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pdf-content h2 {
+    color: #e94f00;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pdf-content ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.pdf-content ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.pdf-content hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+.text-with-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-inline {
+    margin-right: 20px;
+    max-width: 250px;
+    height: auto;
+}
+.image-large {
+    max-width: 50%;
+    height: auto;
+    margin: 20px 0;
+	}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-iframe {
+    width: 1110px;  /* Ancho típico de un teléfono celular */
+    height: 640px; /* Alto típico de un teléfono celular */
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.home-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-link img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor cuando pases el mouse sobre la imagen */
+}

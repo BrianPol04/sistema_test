@@ -1,8 +1,8 @@
- 
+
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
 
-<head> 
+<head>
     <meta charset="utf-8" />
     <title>Sign In | Velzon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body> 
+<body>
     <div class="auth-page-wrapper pt-5">
         <!-- auth page bg -->
         <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
@@ -36,19 +36,19 @@
 
         <!-- auth page content -->
         <div class="auth-page-content">
-            <div class="container"> 
+            <div class="container">
                 <div class="row justify-content-center mt-5">
                     <div class="col-md-8 col-lg-6 col-xl-5">
                         <div class="card mt-4">
 
                             <div class="card-body p-4">
                                 <div class="text-center mt-2">
-                                    <h5 class="text-primary">Tarea completo</h5>
+                                    <h5 class="text-primary">Diviertete y Aprende</h5>
                                     <p class="text-muted">Ingrese tus credenciales.</p>
                                 </div>
                                 <div class="p-2 mt-4">
                                     <form   method="POST"  action="{{ route('login') }}"  >
-                                     @csrf  
+                                     @csrf
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email</label>
                                             <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email"  placeholder="Escribe email" value="admin@gmail.com" required autofocus>
@@ -56,8 +56,8 @@
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
-                                            @enderror  
-                                        </div> 
+                                            @enderror
+                                        </div>
 
                                         <div class="mb-3">
                                             <div class="float-end">
@@ -82,8 +82,8 @@
 
                                         <div class="mt-4">
                                             <button class="btn btn-primary w-100" type="submit">Sign In</button>
-                                        </div>  
-                                    </form>  
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                             <!-- end card body -->
@@ -109,7 +109,7 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script> Tarea <i class="mdi mdi-heart text-danger"></i> Completo
+                                <script>document.write(new Date().getFullYear())</script> Diviertete <i class="mdi mdi-heart text-danger"></i> Aprende
                             </p>
                         </div>
                     </div>
@@ -127,13 +127,13 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     {{-- <script src="assets/js/plugins.js"></script> --}}
-    <script src="{{asset('assets/js/jquery.min.js')}}"></script> 
+    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
 
     <!-- particles js -->
     <script src="assets/libs/particles.js/particles.js"></script>
     <!-- particles app js -->
     <script src="assets/js/pages/particles.app.js"></script>
-    <!-- password-addon init --> 
+    <!-- password-addon init -->
 
     <script src="assets/js/pages/password-addon.init.js"></script>
 </body>

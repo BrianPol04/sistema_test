@@ -27,8 +27,7 @@
     <div id="scrollbar">
         <div class="container-fluid">
 
-            <div id="two-column-menu">
-            </div>
+            <div id="two-column-menu"></div>
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                 <li class="nav-item">
@@ -55,7 +54,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="{{ url('cursos') }}">
+                        <a class="nav-link menu-link" href="{{ asset('aprende/index.html') }}">
                             <i class="bx bx-book"></i> <span data-key="t-Cursos">Gestionar Cursos</span>
                         </a>
                     </li>
@@ -65,8 +64,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="{{ url('reportexamen') }}">
-                            <i class="bx bx-bar-chart"></i> <span data-key="t-Resultado">Resultado de los examenes</span>
+                        <!-- Cambiar el enlace a la página de contacto -->
+                        <a class="nav-link menu-link" href="{{ url('contacto/contacto.html') }}">
+                            <i class="bx bx-bar-chart"></i> <span data-key="t-Resultado">Contacto</span>
                         </a>
                     </li>
                 @endif
@@ -84,12 +84,11 @@
                 @endif
                 @if (Auth::user()->rol === 'Alumno')
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="{{ url('curso') }}">
+                        <a class="nav-link menu-link" href="{{ asset('aprende/index.html') }}">
                             <i class="bx bx-book-open"></i> <span data-key="t-Cursos">Cursos</span>
                         </a>
                     </li>
                 @endif
-
             </ul>
         </div>
     </div>
