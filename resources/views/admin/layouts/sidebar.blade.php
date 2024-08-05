@@ -72,7 +72,8 @@
                 @endif
                 @if (Auth::user()->rol === 'Admin')
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="{{ url('listalumnos') }}">
+                        <!-- Modificar el enlace para redirigir a la gestión de calificaciones -->
+                        <a class="nav-link menu-link" href="{{ url('gestion_calificaciones/index.php') }}">
                             <i class="bx bxs-user-detail"></i> <span data-key="t-listalumnos">Reporte por alumno</span>
                         </a>
                     </li>

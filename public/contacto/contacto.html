@@ -19,16 +19,18 @@
     <section id="contacto">
         <h2>Contáctanos</h2>
         <p>Dirección: Instituto Técnico Superior Comunitario</p>
-        <p>Teléfono: [Número de Teléfono]</p>
-        <p>Email: <a href="mailto:[Email de la Escuela]">[Email de la Escuela]</a></p>
-        <p>Síguenos en: [Redes Sociales]</p>
+        <p>Teléfono: 809-303-9860</p>
+        <p>Email: <a href="mailto:divierteteyaprendesupport@gmail.com">divierteteyaprendesupport@gmail.com</a></p>
         <div id="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.8923213633825!2d-69.80585092492531!3d18.533767482562308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8684845e3f4b%3A0x7dd4257726fb2157!2sInstituto%20T%C3%A9cnico%20Superior%20Comunitario!5e0!3m2!1ses-419!2sdo!4v1722198215060!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
     <footer>
-        <p>&copy; [Año] Instituto Técnico Superior Comunitario. Todos los derechos reservados.</p>
+        <p>&copy; <span id="year"></span> Instituto Técnico Superior Comunitario. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
