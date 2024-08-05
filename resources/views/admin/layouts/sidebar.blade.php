@@ -58,11 +58,13 @@
                             <i class="bx bx-book"></i> <span data-key="t-Cursos">Gestionar Cursos</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="{{ url('examennew') }}">
-                            <i class="bx bx-file"></i> <span data-key="t-Examen">Crear Examen</span>
-                        </a>
-                    </li>
+                    @if (Auth::user()->rol === 'Profesor')
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="{{ url('gestion_calificaciones/index.php') }}">
+                                <i class="bx bx-bar-chart"></i> <span data-key="t-Calificaciones">Calificaciones</span>
+                            </a>
+                        </li>
+                    @endif
                     <li class="nav-item">
                         <!-- Cambiar el enlace a la página de contacto -->
                         <a class="nav-link menu-link" href="{{ url('contacto/contacto.html') }}">
