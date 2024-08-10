@@ -127,9 +127,8 @@
             document.getElementById('currentDate').innerHTML = calendarString;
         }
         renderCalendar();
-//156
+
         // Widget de clima (usando OpenWeatherMap API)
 
     </script>
 @endsection
-
