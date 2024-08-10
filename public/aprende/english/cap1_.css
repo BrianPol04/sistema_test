@@ -117,7 +117,18 @@ body {
     max-width: 250px;
     height: auto;
 }
-
+.image-inleft {
+    float: left;
+    margin-right: 20px;
+    max-width: 250px;
+    height: auto;
+}
+.image-inright {
+    float: right;
+    margin-left: 20px;
+    max-width: 250px;
+    height: auto;
+}
 .image-large {
     max-width: 50%;
     height: auto;
@@ -243,3 +254,8 @@ button {
     margin: 10px;
     border: none;
     border-radius
+}
+.separator {
+      margin-top: 80px;
+    margin-bottom: 80px;
+}	
